@@ -18,7 +18,7 @@ namespace DotnetBotApplication
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
+                await Conversation.SendAsync(activity, () => new BasicMultiDialogBot.Dialogs.RootDialog());
             }
             else
             {
